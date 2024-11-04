@@ -1,6 +1,6 @@
 from pico2d import *
 
-from grass import Grass
+from grass import Grass_1
 from boy import Boy
 import game_world
 
@@ -23,11 +23,13 @@ def reset_world():
 
     running = True
 
-    grass = Grass()
+    grass = Grass_1()
     game_world.add_object(grass, 0)# 영속 객체 -> world가 존재하는 한 계속 살아있는 객체
 
     boy = Boy()          # 영속 객체
     game_world.add_object(boy, 1)
+
+
 
 
 def update_world():
